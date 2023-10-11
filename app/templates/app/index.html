@@ -14,11 +14,11 @@
     <!--<link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
+    <!-- CSS ici -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text css" href="{% static 'css/magnific-popup.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/nice-select.css' %}">
@@ -33,7 +33,7 @@
 
 <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">Vous utilisez un navigateur <strong>obsolète</strong>. Veuillez <a href="https://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience et votre sécurité.</p>
         <![endif]-->
 
     <!-- header-start -->
@@ -53,18 +53,18 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="{% url 'index' %}">Home</a></li>
+                                        <li><a class="active" href="{% url 'index' %}">Accueil</a></li>
                                         {% if perms.app.add_transaction%}
-                                            <li><a href="{% url 'activity' %}">Activity</a></li>
+                                            <li><a href="{% url 'activity' %}">Activité</a></li>
                                         {% endif %}
                                         {% if perms.app.add_transaction %}
-                                            <li><a href="{% url 'send' %}">Send & Request</a>
+                                            <li><a href="{% url 'send' %}">Envoyer & Demander</a>
                                         {% endif %}
                                         {% if perms.app.add_account%}
-                                            <li><a href="{% url 'account' %}">Wallet</a></li>
+                                            <li><a href="{% url 'account' %}">Portefeuille</a></li>
                                         {% endif %}
                                         {% if perms.app.change_profile %}
-                                            <li><a href="{% url 'profile' %}">User Profile</a></li>
+                                            <li><a href="{% url 'profile' %}">Profil d'Utilisateur</a></li>
                                         {% endif %}
 
                                     </ul>
@@ -72,13 +72,13 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="Appointment">
+                            <div class="Rendez-vous">
                                 <div>
                                     {% if user.is_authenticated %}
-                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">Log Out</a></div>
+                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">Déconnexion</a></div>
                                         <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">{{ user.username }}</a></div>
                                     {% else %}
-                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_login' %}">Login</a></div>
+                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_login' %}">Connexion</a></div>
                                     {% endif %}
                                 </div>
                             </div>
@@ -98,14 +98,13 @@
         <div class="slider_active owl-carousel">
             <div class="single_slider  d-flex align-items-center slider_bg_1">
                 <div class="container">
-                    <div class="row">
+                    <div class row>
                         <div class="col-xl-12">
                             <div class="slider_text ">
                                 <h3> <span>Easy Pay</span> </h3>
-                                <p>With easy pay, you can not only send and transfer money <br> within a second, but also
-                                    track your spendings in few steps.</p>
+                                <p>Avec Easy Pay, vous pouvez non seulement envoyer et transférer de l'argent en quelques secondes, mais aussi suivre vos dépenses en quelques étapes.</p>
                                 {% if perms.app.add_account %}
-                                    <a href="{% url 'account' %}" class="boxed-btn3">Check Wallet</a>
+                                    <a href="{% url 'account' %}" class="boxed-btn3">Vérifier le Portefeuille</a>
                                 {% endif %}
                             </div>
                         </div>
@@ -123,13 +122,13 @@
             <div class="row no-gutters">
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service">
-                        <div class="icon">
+                        <div class="icone">
                             <i class="flaticon-money"></i>
                         </div>
-                        <h3>Send</h3>
-                        <p>Send your money to your friend within a minute.</p>
+                        <h3>Envoyer</h3>
+                        <p>Envoyez de l'argent à votre ami en une minute.</p>
                         {% if perms.app.add_transaction %}
-                            <a href="{% url 'send' %}" class="boxed-btn3-white">Send</a>
+                            <a href="{% url 'send' %}" class="boxed-btn3-white">Envoyer</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -137,13 +136,13 @@
                 </div>
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service">
-                        <div class="icon">
+                        <div class="icone">
                             <i class="flaticon-money-2"></i>
                         </div>
-                        <h3>Request</h3>
-                        <p>Request money from your friend without hesitation.</p>
+                        <h3>Demander</h3>
+                        <p>Demander de l'argent à votre ami sans hésitation.</p>
                         {% if perms.app.add_transaction %}
-                            <a href="{% url 'request' %}" class="boxed-btn3-white">Request</a>
+                            <a href="{% url 'request' %}" class="boxed-btn3-white">Demander</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -151,13 +150,13 @@
                 </div>
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service">
-                        <div class="icon">
+                        <div class="icone">
                             <i class="flaticon-bank"></i>
                         </div>
-                        <h3>Transfer</h3>
-                        <p>Transfer money to bank with only one click.</p>
+                        <h3>Transférer</h3>
+                        <p>Transférer de l'argent vers la banque en un seul clic.</p>
                         {% if perms.app.change_account %}
-                            <a href="{% url 'account' %}" class="boxed-btn3-white">Transfer</a>
+                            <a href="{% url 'account' %}" class="boxed-btn3-white">Transférer</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -174,23 +173,23 @@
         <div class="copy-right_text">
             <div class="container">
                 <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Le lien vers Colorlib ne peut pas être supprimé. Le modèle est sous licence CC BY 3.0. -->
+                            Droits d'auteur &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Ce modèle a été créé avec <i class="fa fa-heart-o" aria-hidden="true"></i> par <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Le lien vers Colorlib ne peut pas être supprimé. Le modèle est sous licence CC BY 3.0. -->
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
-<!-- footer end  -->
+    <!-- footer end  -->
 
-    <!-- link that opens popup -->
+    <!-- lien qui ouvre une popup -->
 
-    <!-- JS here -->
+    <!-- JS ici -->
     <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/vendor/jquery-1.12.4.min.js'%}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
