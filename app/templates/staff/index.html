@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Easy Pay</title>
+    <title>NaN-wallet</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,7 +45,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="{% url 'index' %}">
-                                    <img src="{% static 'img/logo.png' %}" alt="">
+                                    <img style="width: 100px; height: 100px;" src="{% static 'img/logo-nan.png' %}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -53,10 +53,10 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="{% url 'index' %}">Home</a></li>
+                                        <li><a class="active" href="{% url 'index' %}">Accueil</a></li>
 
                                         {% if perms.app.delete_transaction %}
-                                            <li><a href="{% url 'staff_user' %}">User List</a></li>
+                                            <li><a href="{% url 'staff_user' %}">Liste des utilisateurs</a></li>
                                         {% endif %}
                                         {% if perms.app.delete_transaction %}
                                             <li><a href="{% url 'staff_transaction' %}">Transactions</a></li>
@@ -70,10 +70,10 @@
                             <div class="Appointment">
                                 <div>
                                     {% if user.is_authenticated %}
-                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">Log Out</a></div>
+                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">Se déconnecter</a></div>
                                         <div class="book_btn d-none d-lg-block"><a href="{% url 'user_logout' %}">{{ user.username }}</a></div>
                                     {% else %}
-                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_login' %}">Login</a></div>
+                                        <div class="book_btn d-none d-lg-block"><a href="{% url 'user_login' %}">Connexion</a></div>
                                     {% endif %}
                                 </div>
                             </div>
@@ -96,11 +96,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h3> <span>Easy Pay</span> </h3>
-                                <p>With easy pay, you can not only send and transfer money <br> within a second, but also
-                                    track your spendings in few steps.</p>
+                                <h3> <span>Paiement facile</span> </h3>
+                                <p>Avec NaN-WalleT, faites vos transaction en toute tranquilité <br>en une minute
+                                    et suivre vos dépenses en toute tranquilité.</p>
                                 {% if perms.app.add_account %}
-                                    <a href="{% url 'account' %}" class="boxed-btn3">Check Wallet</a>
+                                    <a href="{% url 'account' %}" class="boxed-btn3">Vérifier le portefeuille</a>
                                 {% endif %}
                             </div>
                         </div>
@@ -121,10 +121,10 @@
                         <div class="icon">
                             <i class="flaticon-money"></i>
                         </div>
-                        <h3>Send</h3>
-                        <p>Send your money to your friend within a minute.</p>
+                        <h3>Envoyer</h3>
+                        <p>Envoyez votre argent à votre ami dans la minute.</p>
                         {% if perms.app.add_transaction %}
-                            <a href="{% url 'send' %}" class="boxed-btn3-white">Send</a>
+                            <a href="{% url 'send' %}" class="boxed-btn3-white">Envoyer</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -135,10 +135,10 @@
                         <div class="icon">
                             <i class="flaticon-money-2"></i>
                         </div>
-                        <h3>Request</h3>
-                        <p>Request money from your friend without hesitation.</p>
+                        <h3>Demande</h3>
+                        <p>Demandez de l'argent à votre ami sans hésitation.</p>
                         {% if perms.app.add_transaction %}
-                            <a href="{% url 'request' %}" class="boxed-btn3-white">Request</a>
+                            <a href="{% url 'request' %}" class="boxed-btn3-white">Demande</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -149,10 +149,10 @@
                         <div class="icon">
                             <i class="flaticon-bank"></i>
                         </div>
-                        <h3>Transfer</h3>
-                        <p>Transfer money to bank with only one click.</p>
+                        <h3>Transfert</h3>
+                        <p>Transférez de l'argent à la banque en un seul clic.</p>
                         {% if perms.app.change_account %}
-                            <a href="{% url 'account' %}" class="boxed-btn3-white">Transfer</a>
+                            <a href="{% url 'account' %}" class="boxed-btn3-white">Transfert</a>
                         {% else %}
                             <br>
                         {% endif %}
@@ -173,7 +173,7 @@
                         <div class="col-xl-12">
                             <p class="copy_right text-center">
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+&copy;<script>document.write(new Date().getFullYear());</script> NaN-WalleT, Tous Droits Réservés<i class="fa fa-heart-o" aria-hidden="true"></i> <!--by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
