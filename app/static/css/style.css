@@ -381,7 +381,7 @@ h3 {
   color: #131313;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -426,7 +426,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 15px;
   font-weight: 500;
   border: 0;
@@ -466,7 +466,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 9px 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 15px;
   font-weight: 400;
   border: 0;
@@ -506,7 +506,7 @@ h3 {
   color: #5DB2FF !important;
   display: inline-block;
   padding: 9px 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 15px;
   font-weight: 400;
   border: 0;
@@ -546,7 +546,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -982,7 +982,7 @@ h3 {
   font-weight: 500;
   display: inline-block;
   padding: 0px 0px 0px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   position: relative;
   text-transform: capitalize;
 }
@@ -1257,7 +1257,7 @@ h3 {
 /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   color: #1F1F1F;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 70px;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -2207,7 +2207,7 @@ h3 {
 
 /* line 397, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_offers.scss */
 .gj-picker-md {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: "Salsa", cursive;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .04em;
@@ -2574,7 +2574,7 @@ h3 {
   cursor: pointer;
   display: block;
   float: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Salsa", cursive;
   font-weight: normal;
   width: 100% !important;
   /* height: 42px; */
@@ -2612,7 +2612,7 @@ h3 {
   top: 3px;
   transition: all 0.15s ease-in-out;
   width: 5px;
-  font-family: fontawesome;
+  font-family: "Salsa", cursive;
   color: #919191;
   font-size: 15px;
 }
